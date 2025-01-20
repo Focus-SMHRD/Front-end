@@ -1,16 +1,21 @@
 import BarChart from './BarChart';
+import PieChart from './PieChart';
+import AreaChart from './AreaChart';
+import React, { useRef, useEffect } from "react";
+import { DataTable } from "simple-datatables";
+import Table from './Table';
 
-function Home(){
+const Home = () => {
     return(
       <>
         <main>
           <header className="page-header page-header-dark pb-10"
             style={{
-              backgroundImage: "url('../mainImg.jpg')",
+              backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../mainImg.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center 47%",
             }}>
-            <div className="container-xl px-4">
+            <div className="container-xl px-4 ">
               <div className="page-header-content pt-4">
                 <div className="row align-items-center justify-content-between">
                   <div className="col-auto mt-4">
@@ -142,33 +147,29 @@ function Home(){
                         role="tabpanel"
                         aria-labelledby="overview-pill"
                       >
-                      <div
-                        className="chart-area mb-4 mb-lg-0"
-                        style={{ height: "20rem" }}
-                      >
-                        <BarChart />
-                        <canvas id="myAreaChart" width="100%" height={30} />
+                      <div className="chart-area mb-4 mb-lg-0">
+                        <AreaChart />
                       </div>
                     </div>
                     <div
-                      className="tab-pane fade chart-area mb-4 mb-lg-0"
-                      style={{ height: "20rem" }}
+                      className="tab-pane fade chart-area mb-4 mb-lg-0 "
                       id="activities"
                       role="tabpanel"
                       aria-labelledby="activities-pill"
                     >
-                      과거 수온
+                     <BarChart/>{/* 여기에 과거수온 차트 넣으면 됨 */}
                     </div>
                   </div>
                 </div>
+                  <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
               </div>
             </div>
-            <div className="col-xxl-3 col-lg-5 col-md-12">
+            <div className="col-xxl-5 col-lg-5 col-md-12">
               <div className="card mb-4">
-                <div className="card-header">오늘의 날씨</div>
+                <div className="card-header">오늘의 날씨 🌤️</div>
                   <div className="card-body">
                     <div className="chart-pie mb-4">
-                      <canvas id="myPieChart" width="100%" height={50} />
+                      <PieChart/>
                     </div>
                   <div className="list-group list-group-flush">
                     <div className="list-group-item d-flex align-items-center justify-content-between small px-0 py-2">
@@ -198,22 +199,15 @@ function Home(){
             </div>
 
             {/* ---------실시간 표층수온 표-----------*/}
-              <div className="card mb-4">
-                <div className="card-body py-5">
-                  <div className="d-flex flex-column justify-content-center">
-                    <img
-                      className="img-fluid mb-4"
-                      src="assets/img/illustrations/data-report.svg"
-                      alt=""
-                      style={{ height: "10rem" }}
-                    />
-                    <div className="text-center px-0 px-lg-5">
-                      실시간 표층수온 표
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
+    <div className='col-xxl-12'>
+   <div className="card mb-4">
+  <div className="card-header">Personnel Management</div>
+  <div className="card-body">
+    <Table/>
+  </div>
+</div>
+</div>
             </div>
           </div>
         </main>

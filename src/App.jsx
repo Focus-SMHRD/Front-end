@@ -4,7 +4,6 @@ import LoginPage from './pages/LoginPage';
 import MainPage from './pages/MainPage';
 import FindPage from './pages/FindPage';
 import FishfarmPage from './pages/FishfarmPage';
-import ProfilePage from './pages/ProfilePage';
 import AccountPage from './pages/AccountPage';
 import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
 
@@ -27,7 +26,6 @@ function App() {
                 <Route path="/" element={<LoginPage />} />
                 <Route path="/main" element={<MainPage />} />
                 <Route path="/fishfarm" element={<FishfarmPage/>}/>
-                <Route path="/profile" element={<ProfilePage/>}/>
                 <Route path="/account" element={<AccountPage/>}/>
             </Routes>
         </BrowserRouter>

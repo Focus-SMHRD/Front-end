@@ -14,10 +14,6 @@ function TopNav() {
     function gotoLogin(){
         navigate('/login');
     }
-    //계정 -> 계정관리 / 프로필 페이지로 넘어감
-    function gotoProfile(){
-        navigate('/profile');
-    }
     useEffect(() => {
         // Feather Icons 활성화
         feather.replace();
@@ -127,28 +123,31 @@ function TopNav() {
                         className="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
                         aria-labelledby="navbarDropdownAlerts"
                     >
-                        <h6 className="dropdown-header dropdown-notifications-header">
+                        <h6 className="dropdown-header dropdown-notifications-header"
+                        style={{backgroundColor:"#cce4f7"}}>
                             <i className="me-2" data-feather="bell" />
                             알람
                         </h6>
                         {/* Example Alert 1*/}
-                        <a className="dropdown-item dropdown-notifications-item" href="#">
-                            <div className="dropdown-notifications-item-icon bg-warning">
-                                <i data-feather="activity" />
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-danger">
+                                <i class="fas fa-exclamation-triangle"></i>
                             </div>
-                            <div className="dropdown-notifications-item-content">
-                                <div className="dropdown-notifications-item-content-details">
-                                    2025.01.17
-                                </div>
-                                <div className="dropdown-notifications-item-content-text">
-                                    알람입니다!
-                                </div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">Dropdown Item Details</div>
+                                <div class="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
                             </div>
                         </a>
-                      
-                        <a className="dropdown-item dropdown-notifications-footer" href="#">
-                            더보기
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-info">
+                                <i data-feather="bar-chart"></i>
+                            </div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">Dropdown Item Details</div>
+                                <div class="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
+                            </div>
                         </a>
+                        
                     </div>
                 </li>
                 {/* User Dropdown*/}
@@ -182,12 +181,6 @@ function TopNav() {
                             </div>
                         </h6>
                         <div className="dropdown-divider" />
-                        <a className="dropdown-item" onClick={gotoProfile}>
-                            <div className="dropdown-item-icon">
-                                <i data-feather="settings" />
-                            </div>
-                            계정
-                        </a>
                         <div className="dropdown-item" onClick={gotoLogin}>
                             <div className="dropdown-item-icon">
                                 <i data-feather="log-out" />
