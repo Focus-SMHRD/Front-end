@@ -123,8 +123,7 @@ function TopNav() {
                         className="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
                         aria-labelledby="navbarDropdownAlerts"
                     >
-                        <h6 className="dropdown-header dropdown-notifications-header"
-                        style={{backgroundColor:"#cce4f7"}}>
+                        <h6 className="dropdown-header dropdown-notifications-header">
                             <i className="me-2" data-feather="bell" />
                             알람
                         </h6>

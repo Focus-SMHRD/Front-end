@@ -11,7 +11,7 @@ const Home = () => {
         <main>
           <header className="page-header page-header-dark pb-10"
             style={{
-              backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../mainImg.jpg')",
+              backgroundImage: "linear-gradient(to right,rgba(0, 0, 0, 0.7), rgba(72, 187, 250, 0.2)),url('../mainImg.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center 47%",
             }}>
