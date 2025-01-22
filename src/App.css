@@ -10,6 +10,71 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .tableCenter{
+    text-align: center !important;
+ }
+ .weather-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 좌우 간격 조정 */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.weather-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 200px; /* 아이콘 크기 조절 */
+  height: auto;
+}
+
+.temperature {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  left: 56%;
+  top: 78%;
+  transform: translate(-50%, -10%);
+  white-space: nowrap;
+}
+
+.weather-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.weather-summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.temp-diff {
+  color: red;
+  font-weight: bold;
+}
+
+.temp-cur {
+  color: blue;
+  font-weight: bold;
+}
+
+.weather-details {
+  font-size: 1rem;
+  color: #555;
+}
+
+.update-time {
+  font-size: 0.9rem;
+  color: #888;
+}
+
 :root {
   --bs-blue: #0061f2;
   --bs-indigo: #5800e8;
