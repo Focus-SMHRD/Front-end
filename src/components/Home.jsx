@@ -193,7 +193,7 @@ const Home = ({news}) => {
                       <div className="page-header-icon">
                         <i data-feather="activity" />
                       </div>
-                      스마트 김양식
+                      진짜 뭐라써야할지 모르겠다
                     </h1>
                     <div className="page-header-subtitle">
                       현재 뜨고있는 뉴스기사🔥
