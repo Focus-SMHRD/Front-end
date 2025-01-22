@@ -128,22 +128,22 @@ function TopNav() {
                             알람
                         </h6>
                         {/* Example Alert 1*/}
-                        <a class="dropdown-item dropdown-notifications-item" href="#!">
-                            <div class="dropdown-notifications-item-icon bg-danger">
-                                <i class="fas fa-exclamation-triangle"></i>
+                        <a className="dropdown-item dropdown-notifications-item" href="#!">
+                            <div className="dropdown-notifications-item-icon bg-danger">
+                                <i className="fas fa-exclamation-triangle"></i>
                             </div>
-                            <div class="dropdown-notifications-item-content">
-                                <div class="dropdown-notifications-item-content-details">Dropdown Item Details</div>
-                                <div class="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
+                            <div className="dropdown-notifications-item-content">
+                                <div className="dropdown-notifications-item-content-details">Dropdown Item Details</div>
+                                <div className="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
                             </div>
                         </a>
-                        <a class="dropdown-item dropdown-notifications-item" href="#!">
-                            <div class="dropdown-notifications-item-icon bg-info">
+                        <a className="dropdown-item dropdown-notifications-item" href="#!">
+                            <div className="dropdown-notifications-item-icon bg-info">
                                 <i data-feather="bar-chart"></i>
                             </div>
-                            <div class="dropdown-notifications-item-content">
-                                <div class="dropdown-notifications-item-content-details">Dropdown Item Details</div>
-                                <div class="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
+                            <div className="dropdown-notifications-item-content">
+                                <div className="dropdown-notifications-item-content-details">Dropdown Item Details</div>
+                                <div className="dropdown-notifications-item-content-text">This is the dropdown item text. It will truncate after a fixed width.</div>
                             </div>
                         </a>
                         
