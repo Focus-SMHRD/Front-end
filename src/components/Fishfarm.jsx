@@ -10,7 +10,7 @@ const [data2, setData2] = useState(data)
     <Sidebar/>
       <main>
         <header className="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
-          <div className="container-xl px-4">
+          <div className="container-xl px-4 fish_header">
             <div className="page-header-content">
               <div className="row align-items-center justify-content-between pt-3">
                 <div className="col-auto mb-3">
@@ -35,11 +35,11 @@ const [data2, setData2] = useState(data)
           </nav>
 
         <hr className="mt-0 mb-4" /> */}
-          <div className="row">
+          <div className="row one">
             
-            <div className="col-xl-12">
+            <div className="col-xl-12 two" >
               {/* Account details card*/}
-              <div className="card mb-4">
+              <div className="card mb-4 three">
                 <div className="card-header">양식장 추가 / 센서 등록</div>
                 <div className="card-body">
                   <form>

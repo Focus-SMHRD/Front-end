@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
+import Footer from "../components/Footer";
 
 function RegisterPage() {
     const [loading, setLoading] = useState(false);
@@ -144,11 +145,11 @@ function RegisterPage() {
             )}
             <div id="layoutAuthentication_content">
                 <main>
-                    <div className="container-xl px-4">
+                    <div className="container-xl px-4 custom_page">
                         <div className="row justify-content-center">
                             <div className="col-lg-7">
-                                <div className="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div className="card-header justify-content-center">
+                                <div className="card shadow-lg border-0 rounded-lg mt-5 custom_wrap">
+                                    <div className="card-header justify-content-center custom_header">
                                         <h3 className="fw-light my-4">회원가입</h3>
                                     </div>
                                     <div className="card-body">
@@ -183,17 +184,21 @@ function RegisterPage() {
                                                     </div>
                                                 </div>
                                             </div>
-                                                <label className="small mb-1" htmlFor="inputEmailAddress">이메일</label>
-                                                <input
-                                                    className="form-control"
-                                                    name="email"
-                                                    value={formData.email}
-                                                    onChange={handleChange}
-                                                    id="inputEmailAddress"
-                                                    type="email"
-                                                    placeholder="Enter email address"
-                                                />
-                                            <span style={{ color: 'red' }}>{errors.emailError}</span>
+                                            <div className="row gx-3">
+                                                <div className="col-md-6 email_input">
+                                                    <label className="small mb-1" htmlFor="inputEmailAddress">이메일</label>
+                                                    <input
+                                                        className="form-control"
+                                                        name="email"
+                                                        value={formData.email}
+                                                        onChange={handleChange}
+                                                        id="inputEmailAddress"
+                                                        type="email"
+                                                        placeholder="Enter email address"
+                                                    />
+                                                </div>
+                                                <span style={{ color: 'red' }}>{errors.emailError}</span>
+                                            </div>
                                             <div className="row gx-3">
                                                 <div className="col-md-6">
                                                     <div className="mb-3">
@@ -249,15 +254,7 @@ function RegisterPage() {
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer className="footer-admin mt-auto footer-dark">
-                    <div className="container-xl px-4">
-                        <div className="row">
-                            <div className="col-md-6 small">
-                                Copyright © SMHRD Team Focus 2025
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </div>
     );

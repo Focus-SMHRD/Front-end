@@ -211,7 +211,7 @@ const Home = ({news}) => {
                 news.map((newsItem) => (
                   <div className="col-xl-4 mb-4" key={newsItem.news_idx}>
                   {/* 뉴스카드 */}
-                  <a className="card lift h-100" href={newsItem.news_url}>
+                  <a className="card lift h-100" href={newsItem.news_url} target="_blank">
                     <div className="card-body d-flex justify-content-center flex-column">
                       <div className="d-flex align-items-center justify-content-between">
                         <div className="me-3">

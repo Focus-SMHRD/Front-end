@@ -1,4 +1,3 @@
-import React from 'react'
 import TopNav from "../components/TopNav";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";

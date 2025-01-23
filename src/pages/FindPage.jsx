@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import axios from 'axios';
 import { Spinner } from 'react-bootstrap';
+import Footer from "../components/Footer";
 
 function FindPage() {
     const [loading, setLoading] = useState(false);
@@ -94,12 +95,12 @@ function FindPage() {
             )}
             <div id="layoutAuthentication_content">
                 <main>
-                    <div className="container-xl px-4">
+                    <div className="container-xl px-4 custom_page">
                         <div className="row justify-content-center">
                             <div className="col-lg-5">
                                 {/* Basic forgot password form */}
-                                <div className="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div className="card-header justify-content-center">
+                                <div className="card shadow-lg border-0 rounded-lg mt-5 custom_wrap">
+                                    <div className="card-header justify-content-center custom_header">
                                         <h3 className="fw-light my-4">비밀번호 재설정하기</h3>
                                     </div>
                                     <div className="card-body">
@@ -153,15 +154,7 @@ function FindPage() {
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer className="footer-admin mt-auto footer-dark">
-                    <div className="container-xl px-4">
-                        <div className="row">
-                            <div className="col-md-6 small">
-                                Copyright © SMHRD Team Focus 2025
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </div>
     );

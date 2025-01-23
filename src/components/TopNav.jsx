@@ -3,7 +3,7 @@ import feather from 'feather-icons';
 import * as bootstrap from 'bootstrap';  // Bootstrap 객체 사용을 위해 유지
 import { useNavigate } from "react-router-dom";
 
-function TopNav() {
+function TopNav({isClick, setIsClick}) {
     const sidebarToggleRef = useRef(null); // ref 사용
     const navigate = useNavigate();
     //Nav배너 -> 메인 페이지로 넘어감
@@ -40,10 +40,12 @@ function TopNav() {
         const toggleSidebar = () => {
             document.body.classList.toggle('sidenav-toggled');
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sidenav-toggled'));
+            setIsClick(false);
+            console.log("햄벌거", isClick)
         };
 
         if (sidebarToggle) {
-            sidebarToggle.addEventListener('click', toggleSidebar);
+            sidebarToggle.addEventListener('click', toggleSidebar); //얘임
         }
 
         // Close side navigation when width < LG
@@ -90,6 +92,16 @@ function TopNav() {
             }
         };
     }, []);
+    useEffect(() => {
+        console.log(isClick, '입니다다')
+        if (isClick) {
+            document.body.classList.add('sidenav-toggled');
+            localStorage.setItem('sb|sidebar-toggle', true);
+        } else {
+            document.body.classList.remove('sidenav-toggled');
+            localStorage.setItem('sb|sidebar-toggle', false);
+        }
+    }, [isClick]);
     return (
         <nav
             className="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white"

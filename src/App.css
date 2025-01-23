@@ -11,9 +11,270 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ /* 범인은 이녀석이다.. */
+#layoutAuthentication{ 
+  background-color: #272b35 !important;
+}
+ /* 추가 */
+ main {
+   background-color: #272b35;
+   height: 100%;
+  }
+
+  /* 로그인 */
+  .custom_page {
+    height: 80vh !important;
+  }
+  .custom_page > .row {
+    height: 100%;
+    align-items: center;
+  }
+  .mt-5.custom_wrap {
+    margin-top: 0 !important;
+  }
+  .mt-5.custom_wrap label.small {
+    font-size: 16px;
+    font-weight: 500 !important;
+  }
+  .mt-5.custom_wrap .btn {
+    background-color: #567c8d !important;
+    color: #f5efeb;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+  }
+  .mt-5.custom_wrap .btn:hover {
+    background-color: #1f2b3a !important;
+  }
+
+  .mt-5.custom_wrap a {
+    color: rgb(40, 163, 235);
+    font-weight: 500;
+  }
+  .custom_header {
+    padding: 1.5rem 1.2rem !important;
+  }
+  .custom_header > h3 {
+    margin: 0 !important;
+    color: #f5efeb !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+
+  #joinForm .row.gx-3 .mb-3 {
+    margin-bottom: 0 !important;
+  }
+  #joinForm .row.gx-3 {
+    height: 6rem !important;
+  }
+  .email_input {
+    width: 100% !important;
+  }
+  
+ /* 상단 헤더 */
+ nav#sidenavAccordion { 
+  background-color: #567c8d !important;
+  color: #f5efeb !important;
+ }
+ 
+ /* 햄버거/벨 아이콘 */
+ nav#sidenavAccordion .btn.btn-icon > svg.feather {
+   width: 20px !important;
+   height: 20px !important;
+   color: #f5efeb !important;
+  }
+
+/* 벨/프로필 드롭다운 */
+.dropdown-header.dropdown-notifications-header {
+  background-color: #567c8d !important;
+  color: #f5efeb !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.dropdown-header.dropdown-notifications-header > svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.dropdown-menu > .dropdown-item:hover{
+  cursor: pointer;
+}
+.dropdown-menu > .dropdown-item:active {
+  background-color: #567c8d !important;
+}
+.dropdown-menu > .dropdown-item {
+  font-weight: 500;
+  color: #2f4156;
+}
+.dropdown-menu > .dropdown-item > .dropdown-item-icon > svg.feather {
+  width: 16px !important;
+  height: 16px !important;
+  color: #2f4156;
+}
+  
+  /* 헤더 제목 */
+  .navbar-brand {
+    color: #f5efeb !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  .navbar-brand:hover {
+   cursor: pointer;
+  }
+
+ /* 사이드바 */
+ div.sidenav-menu {
+  background-color: #2f4156 !important;
+  color: #f5efeb !important;
+ }
+ div.sidenav-menu a.nav-link {
+  color: #f5efeb !important;
+ }
+
+div.mx-auto div.btn,
+div.mx-auto button.btn {
+  font-weight: 500;
+  color: #dbd3cd !important;
+ }
+ div.mx-auto div.btn:hover,
+ div.mx-auto button.btn:hover {
+  background-color: #1f2b3a !important;
+ }
+
+ /* 뉴스 카드 h5 */
+.card-body .d-flex .me-3 > h5 {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.card-body .d-flex .me-3 > .text-muted {
+  color: #99a7b3 !important;
+  height: 106px !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-header {
+  background-color: #5c8597 !important;
+}
+
+
+/* 카드 링크 */
+.nav-link.active  {
+  color: #3d5c6b !important;
+  border: #00000000 !important;
+}
+.nav-link.active:hover {
+  color: #6e98ac !important;
+}
+.nav-link  {
+  color: #f5efeb !important;
+  border: #00000000 !important;
+}
+
+.nav-link:hover {
+  color: #bfced4 !important;
+}
+
+.card-header {
+  color: #f5efeb !important;
+}
+
+/* 사이드바 푸터 */
+.sidenav-footer {
+  background-color: #567c8d !important;
+}
+.sidenav-footer-subtitle {
+  color: #364c64 !important;
+  font-weight: 500;
+}
+.sidenav-footer-title {
+  font-weight: 600 !important;
+}
+
+/* 푸터 */
+.footer-admin {
+  background-color: #567c8d !important;
+  color: #1f2b3a !important;
+}
+
+/* 양식장 추가 페이지 */
+/* 헤더 */
+header.page-header {
+  background-color: inherit !important;
+  border: #00000000 !important;
+}
+
+.fish_header {
+  width: 46% !important;
+}
+header.page-header .page-header-title {
+  color: #c8d9e6 !important;
+}
+header.page-header .page-header-title div.page-header-icon > svg {
+  width: 20px !important;
+  height: 20px !important;
+  color: #c8d9e6 !important;
+}
+
+/* 폼 컨테이너 */
+div.container-xl.px-4.mt-4 {
+  height: 80% !important;
+}
+div.container-xl.px-4.mt-4 > .row.one {
+  height: 100% !important;
+  justify-content: center;
+  align-items: center;
+}
+div.container-xl.px-4.mt-4 > .row  > .col-xl-12.two {
+  width: 60%;
+  height: 100%;
+}
+div.container-xl div.mb-4.three{
+  width: 100%;
+  margin-bottom: 0 !important;
+  height: 100%;
+}
+div.container-xl div.mb-4 > .card-header{
+  font-size: 18px;
+}
+div.container-xl div.mb-4 > .card-body {
+  padding: 1.45rem 2rem;
+}
+
+div.container-xl div.mb-4 > .card-body > form > div.mb-3 .small {
+  font-size: 16px;
+  font-weight: 500 !important;
+}
+
+div.container-xl div.mb-4 > .card-body > form > div.mb-3:nth-child(5) {
+  margin-bottom: 34px !important;
+}
+
+div.container-xl div.mb-4 > .card-body > form > .btn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  width: 200px;
+  height: 44px;
+  background-color: #567c8d;
+  border: none;
+}
+div.container-xl div.mb-4 > .card-body > form > .btn:hover {
+  background-color: #385461;
+}
+
+/*  */
+
+
+
  .tableCenter{
     text-align: center !important;
  }
+
  .weather-container {
   display: flex;
   align-items: center;
@@ -61,7 +322,7 @@
 }
 
 .temp-cur {
-  color: blue;
+  color: rgb(40, 163, 235);
   font-weight: bold;
 }
 
@@ -76,7 +337,7 @@
 }
 
 :root {
-  --bs-blue: #0061f2;
+  --bs-blue: rgb(40, 163, 235);
   --bs-indigo: #5800e8;
   --bs-purple: #6900c7;
   --bs-pink: #e30059;
@@ -177,7 +438,7 @@
   --bs-font-sans-serif: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: "Noto Sans KR", Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5742,10 +6003,12 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0061f2;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(40, 163, 235);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
   .nav-link {
     transition: none;
   }
@@ -6372,7 +6635,7 @@ textarea.form-control-lg {
 .card-header {
   padding: 1rem 1.35rem;
   margin-bottom: 0;
-  background-color: rgba(33, 40, 50, 0.03);
+  /* background-color: rgba(33, 40, 50, 0.03); */
   border-bottom: 1px solid rgba(33, 40, 50, 0.125);
 }
 .card-header:first-child {
@@ -8214,7 +8477,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans KR", "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8316,7 +8579,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans KR", "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -18597,7 +18860,7 @@ body {
   font-weight: 500;
 }
 .card:not([class*=bg-]) .card-header {
-  color: #0061f2;
+  color: rgb(40, 163, 235);
 }
 
 .card.bg-dark .card-header,
@@ -20256,7 +20519,9 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .page-header.page-header-dark .page-header-subtitle {
-  color: rgba(255, 255, 255, 0.5);
+  color: #f5efeb;
+  /* 색상 변경됨 아래 원본 */
+  /* color: rgba(255, 255, 255, 0.5); */
 }
 .page-header.page-header-dark .breadcrumb {
   background-color: rgba(0, 0, 0, 0.15);
@@ -20511,7 +20776,7 @@ body {
 }
 
 .litepicker {
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: "Noto Sans KR", "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   font-size: 0.875rem !important;
 }
 .litepicker .container__months {
@@ -20930,7 +21195,7 @@ pre[class*=language-] {
   word-wrap: normal;
   color: #eee;
   background: #2f2f2f;
-  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
+  font-family: "Noto Sans KR", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
   font-size: 0.875rem;
   line-height: 1.5em;
   -moz-tab-size: 4;

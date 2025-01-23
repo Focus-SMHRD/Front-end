@@ -9,6 +9,7 @@ import axios from 'axios';
 const MainPage = () => {
     
     const [newsTop3, setNewsTop3] = useState([]);
+    const [isClick, setIsClick] = useState(false);
 
     useEffect(() => {
         const loadNews = async () => {
@@ -23,12 +24,22 @@ const MainPage = () => {
         loadNews();
     }, []);
 
+    const clickMain = () => {
+        // if(isClick){
+        //     setIsClick(false)
+        // }
+        // else{
+        //     setIsClick(true)
+        // }
+        setIsClick(true)
+        console.log(isClick)
+    }
     return (
         <div className="nav-fixed">
-            <TopNav></TopNav>
+            <TopNav isClick = {isClick} setIsClick = {setIsClick}></TopNav>
             <div id="layoutSidenav">
                 <Sidebar></Sidebar>
-                <div id="layoutSidenav_content">
+                <div id="layoutSidenav_content" onClick={()=> {clickMain()}}>
                     <Home news = {newsTop3}></Home>
                     <Footer></Footer>
                 </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useCookies } from 'react-cookie';
 import { Spinner } from 'react-bootstrap';
+import Footer from "../components/Footer";
 
 function LoginPage() {
     const [loading, setLoading] = useState(false);
@@ -156,12 +157,12 @@ function LoginPage() {
             )}
             <div id="layoutAuthentication_content">
                 <main>
-                    <div className="container-xl px-4">
+                    <div className="container-xl px-4 custom_page">
                         <div className="row justify-content-center">
                             <div className="col-lg-5">
                                 {/* Basic login form*/}
-                                <div className="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div className="card-header justify-content-center">
+                                <div className="card shadow-lg border-0 rounded-lg mt-5 custom_wrap">
+                                    <div className="card-header justify-content-center custom_header">
                                         <h3 className="fw-light my-4">로그인</h3>
                                     </div>
                                     <div className="card-body">
@@ -259,15 +260,7 @@ function LoginPage() {
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer className="footer-admin mt-auto footer-dark">
-                    <div className="container-xl px-4">
-                        <div className="row">
-                            <div className="col-md-6 small">
-                                Copyright © SMHRD Team Focus 2025
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </div>
     );
